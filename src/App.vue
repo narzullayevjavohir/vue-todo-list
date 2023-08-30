@@ -23,7 +23,7 @@
         <li
           v-for="(todo, index) in todos"
           :key="todo.id"
-          class="flex justify-around items-center my-3 w-full"
+          class="flex justify-between items-center my-3 w-full px-4"
         >
           <input type="checkbox" @click="completedTodo(index)" />
           <span
