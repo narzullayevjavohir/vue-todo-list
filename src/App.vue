@@ -31,7 +31,11 @@
             :class="{
               'line-through': todo.completed,
             }"
-            >{{ todo.title }}</span
+            >{{
+              todo.title.length > 10
+                ? todo.title.slice(0, 9) + "..."
+                : todo.title
+            }}</span
           >
           <div class="flex flex-row items-center gap-3">
             <button
