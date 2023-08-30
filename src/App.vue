@@ -33,18 +33,20 @@
             }"
             >{{ todo.title }}</span
           >
-          <button
-            @click="editTodo(index)"
-            class="px-2 py-1 text-sm text-white bg-purple-500 rounded"
-          >
-            Edit
-          </button>
-          <button
-            @click="removeTodo(todo.id)"
-            class="px-3 py-1 bg-red-500 text-white rounded text-sm"
-          >
-            Delete
-          </button>
+          <div class="flex flex-row items-center gap-3">
+            <button
+              @click="editTodo(index)"
+              class="px-2 py-1 text-xs text-white bg-purple-500 rounded"
+            >
+              Edit
+            </button>
+            <button
+              @click="removeTodo(todo.id)"
+              class="px-3 py-1 bg-red-500 text-white rounded text-xs"
+            >
+              Delete
+            </button>
+          </div>
         </li>
       </ul>
       <div class="w-full flex justify-around items-center mt-5">
